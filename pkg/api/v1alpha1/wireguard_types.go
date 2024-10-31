@@ -43,7 +43,7 @@ type WireguardSpec struct {
 	Address string `json:"address,omitempty"`
 	// A string field that specifies the DNS server(s) to be used by the peers.
 	Dns string `json:"dns,omitempty"`
-	// A field that specifies the type of Kubernetes service that should be used for the Wireguard VPN. This could be NodePort or LoadBalancer, depending on the needs of the deployment.
+	// A field that specifies the type of Kubernetes service that should be used for the Wireguard VPN. This could be ClusterIP, NodePort or LoadBalancer, depending on the needs of the deployment.
 	ServiceType corev1.ServiceType `json:"serviceType,omitempty"`
 	// A field that specifies the value to use for a nodePort ServiceType
 	NodePort int32 `json:"port,omitempty"`
@@ -53,6 +53,15 @@ type WireguardSpec struct {
 	EnableIpForwardOnPodInit bool `json:"enableIpForwardOnPodInit,omitempty"`
 	// A boolean field that specifies whether to use the userspace implementation of Wireguard instead of the kernel one.
 	UseWgUserspaceImplementation bool `json:"useWgUserspaceImplementation,omitempty"`
+
+	NodeSelector map[string]string `json:"nodeSelector,omitempty"`
+	Agent        WireguardPodSpec  `json:"agent,omitempty"`
+	Metric       WireguardPodSpec  `json:"metric,omitempty"`
+}
+
+// WireguardPodSpec defines spec for respective containers created for Wireguard
+type WireguardPodSpec struct {
+	Resources corev1.ResourceRequirements `json:"resources,omitempty"`
 }
 
 // WireguardStatus defines the observed state of Wireguard

@@ -36,6 +36,7 @@ import (
 // WireguardReconciler reconciles a Wireguard object
 
 const port = 51820
+const httpPort = 8080
 
 const metricsPort = 9586
 

@@ -1,3 +1,57 @@
+# [2.7.0](https://github.com/jodevsa/wireguard-operator/compare/v2.6.2...v2.7.0) (2024-07-18)
+
+
+### Features
+
+* add liveness and readiness probe ([#205](https://github.com/jodevsa/wireguard-operator/issues/205)) ([3f57376](https://github.com/jodevsa/wireguard-operator/commit/3f573760194e52b5afe232e8efb9e08cee75329e))
+
+## [2.6.2](https://github.com/jodevsa/wireguard-operator/compare/v2.6.1...v2.6.2) (2024-07-18)
+
+
+### Bug Fixes
+
+* revert golint setup as it introduce bug on netlink add ([c779a46](https://github.com/jodevsa/wireguard-operator/commit/c779a46689c38bf0e0e44df35f564e04ec352e9e))
+
+# [2.4.0](https://github.com/jodevsa/wireguard-operator/compare/v2.3.2...v2.4.0) (2024-07-15)
+
+
+### Features
+
+* allow setting AllowedIps through WireguardPeer ([#191](https://github.com/jodevsa/wireguard-operator/issues/191)) ([e2d4d9d](https://github.com/jodevsa/wireguard-operator/commit/e2d4d9dc580517ee84048901b057e17b0a94cd73))
+
+## [2.3.2](https://github.com/jodevsa/wireguard-operator/compare/v2.3.1...v2.3.2) (2024-07-14)
+
+
+### Bug Fixes
+
+* avoid hardcoding private key in config ([#200](https://github.com/jodevsa/wireguard-operator/issues/200)) ([018ae37](https://github.com/jodevsa/wireguard-operator/commit/018ae37687fd8221f8a0e15f7a651bfd83eaf48e))
+
+## [2.3.1](https://github.com/jodevsa/wireguard-operator/compare/v2.3.0...v2.3.1) (2024-07-14)
+
+
+### Bug Fixes
+
+* privateKeyRef case ([#199](https://github.com/jodevsa/wireguard-operator/issues/199)) ([f880152](https://github.com/jodevsa/wireguard-operator/commit/f8801526e559365f85d7359846bc738239817643))
+
+
+### Reverts
+
+* Revert "fix manifest case ([#197](https://github.com/jodevsa/wireguard-operator/issues/197))" ([#198](https://github.com/jodevsa/wireguard-operator/issues/198)) ([88dd510](https://github.com/jodevsa/wireguard-operator/commit/88dd510f94b8d6ec9b14897adba8eaa5c13e6b5f))
+
+# [2.3.0](https://github.com/jodevsa/wireguard-operator/compare/v2.2.0...v2.3.0) (2024-07-13)
+
+
+### Features
+
+* add node selector ([#194](https://github.com/jodevsa/wireguard-operator/issues/194)) ([7db3b17](https://github.com/jodevsa/wireguard-operator/commit/7db3b1745869613550f7f5d3054d94c5816acb6f))
+
+# [2.2.0](https://github.com/jodevsa/wireguard-operator/compare/v2.1.0...v2.2.0) (2024-07-05)
+
+
+### Features
+
+* pass resources to deployment' ([d516579](https://github.com/jodevsa/wireguard-operator/commit/d516579f371c1af0cc37ade0b7adf47b8225d669))
+
 # [2.1.0](https://github.com/jodevsa/wireguard-operator/compare/v2.0.30...v2.1.0) (2024-07-03)
 
 
